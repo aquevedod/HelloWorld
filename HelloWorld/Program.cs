@@ -6,7 +6,20 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            CallhackerCard();
+            //CallhackerCard();
+            CallSockMerchant();
+        }
+
+        private static void CallSockMerchant()
+        {
+            var obj = new SockMerchant();
+            int[] ar = new int[] { 1,2,1,2,1,3,2 };
+            int n = 7;
+
+            int res = obj.sockMerchant(n, ar);
+
+            Console.WriteLine(res.ToString());
+            Console.ReadLine();
         }
 
         private static void CallhackerCard()
