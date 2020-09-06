@@ -11,7 +11,7 @@ namespace HelloWorld
         {
             int pair = 0;
 
-            if (n < 1 && n > 100)
+            if (n < 1 && n < 100)
                 return pair;
 
             if (ar != null && ar.Length > 0 && ar.Length <= 100)

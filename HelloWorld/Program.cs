@@ -7,7 +7,16 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             //CallhackerCard();
-            CallSockMerchant();
+            //CallSockMerchant();
+            countingValleys();
+        }
+
+        private static void countingValleys()
+        {
+            var obj = new CountingValleys();
+            int v = obj.countingValleys(8, "UDDDUDUU");
+
+            Console.WriteLine(v);
         }
 
         private static void CallSockMerchant()
