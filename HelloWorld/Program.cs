@@ -8,7 +8,8 @@ namespace HelloWorld
         {
             //CallhackerCard();
             //CallSockMerchant();
-            countingValleys();
+            //countingValleys();
+            DemoTask();
         }
 
         private static void countingValleys()
@@ -22,7 +23,7 @@ namespace HelloWorld
         private static void CallSockMerchant()
         {
             var obj = new SockMerchant();
-            int[] ar = new int[] { 1,2,1,2,1,3,2 };
+            int[] ar = new int[] { 1, 2, 1, 2, 1, 3, 2 };
             int n = 7;
 
             int res = obj.sockMerchant(n, ar);
@@ -46,6 +47,13 @@ namespace HelloWorld
                 }
                 Console.ReadLine();
             }
+        }
+
+        private static void DemoTask()
+        {
+            var obj = new DemoTask();
+            int[] arrayInt = new int[] { 1,2,3 };
+            Console.WriteLine(obj.Solution(arrayInt));
         }
     }
 }
