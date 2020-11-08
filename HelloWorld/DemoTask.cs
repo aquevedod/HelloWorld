@@ -17,7 +17,7 @@ namespace HelloWorld
 
             for (int i = 0; i < a.Count(); i++)
             {
-                if (res == a[i] && (a[i] >= min && a[i] <= 1000000))
+                if (res == a[i] && (a[i] >= min && a[i] <= max))
                 {
                     res++;
                     continue;

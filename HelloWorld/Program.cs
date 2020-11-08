@@ -9,7 +9,9 @@ namespace HelloWorld
             //CallhackerCard();
             //CallSockMerchant();
             //countingValleys();
-            DemoTask();
+            //DemoTask();
+            //BinaryGap();
+            RotateArray();
         }
 
         private static void countingValleys()
@@ -55,5 +57,24 @@ namespace HelloWorld
             int[] arrayInt = new int[] { 1,2,3 };
             Console.WriteLine(obj.Solution(arrayInt));
         }
+
+        private static void BinaryGap()
+        {
+            var obj = new BinaryGap();
+            int res = obj.Solution(32);
+            Console.WriteLine(res);
+        }
+
+        private static void RotateArray()
+        {
+            var obj = new RotateArray(); ;
+            int[] res = obj.Solution(new int[] { 1, 1, 2, 3, 5 }, 42);
+
+            foreach (var item in res)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
     }
 }
