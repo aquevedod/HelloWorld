@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aquev\\source\\repos\\aquevedod\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {}
+    "C:\\Users\\aquev\\Source\\Repos\\aquevedod\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aquev\\source\\repos\\aquevedod\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {
+    "C:\\Users\\aquev\\Source\\Repos\\aquevedod\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aquev\\source\\repos\\aquevedod\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+        "projectUniqueName": "C:\\Users\\aquev\\Source\\Repos\\aquevedod\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
         "projectName": "HelloWorld",
-        "projectPath": "C:\\Users\\aquev\\source\\repos\\aquevedod\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+        "projectPath": "C:\\Users\\aquev\\Source\\Repos\\aquevedod\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
         "packagesPath": "C:\\Users\\aquev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aquev\\source\\repos\\aquevedod\\HelloWorld\\HelloWorld\\obj\\",
+        "outputPath": "C:\\Users\\aquev\\Source\\Repos\\aquevedod\\HelloWorld\\HelloWorld\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aquev\\AppData\\Roaming\\NuGet\\NuGet.Config",

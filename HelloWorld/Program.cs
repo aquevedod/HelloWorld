@@ -11,7 +11,11 @@ namespace HelloWorld
             //countingValleys();
             //DemoTask();
             //BinaryGap();
-            RotateArray();
+            //RotateArray();
+            //ArrayOdd();
+            //FrogJump();
+            //SouthWorkChallenge();
+            Solution(54321);
         }
 
         private static void countingValleys()
@@ -54,7 +58,7 @@ namespace HelloWorld
         private static void DemoTask()
         {
             var obj = new DemoTask();
-            int[] arrayInt = new int[] { 1,2,3 };
+            int[] arrayInt = new int[] { 1, 2, 3 };
             Console.WriteLine(obj.Solution(arrayInt));
         }
 
@@ -76,5 +80,54 @@ namespace HelloWorld
             }
         }
 
+        private static void ArrayOdd()
+        {
+            var obj = new ArrayOdd();
+            Random rd = new Random();
+            int[] arr = new int[999999];
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = rd.Next(1, 1000000000);
+            }
+
+
+            int res = obj.Solution(arr);
+
+            Console.WriteLine(res);
+        }
+
+
+        private static void FrogJump()
+        {
+            var obj = new FrogJump();
+            //int res = obj.Solution(10, 85, 30);
+            int res = obj.Solution(3, 999111321, 7);
+            Console.WriteLine(res);
+        }
+
+        private static void SouthWorkChallenge()
+        {
+            var obj = new SouthWorkChallenge();
+            string res = obj.Solution("askljhfdaskljfhaklsfhakljsdhFLKAHJFKLJDHFKDLJAHFALKFHAKLFHLADKkjlhfdalkahflkafhalkfjhdalkjfhalkDLKASJHFLKHFLKSDJFHALKJFHLAKJFHLAKFHALKFHALKDSJFHALKJFHA");
+            Console.WriteLine(res);
+        }
+
+        private static void Solution(int N)
+        {
+            int enable_print = N % 10;
+            while (N > 0)
+            {
+                if (enable_print == 0 && N / 10 != 0)
+                {
+                    enable_print = 1;
+                }
+                else if (enable_print == 1)
+                {
+                    Console.Write(N % 10);
+                }
+                N = N / 10;
+            }
+        }
     }
 }
