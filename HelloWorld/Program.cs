@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using static HelloWorld.ContactTrie;
 
 namespace HelloWorld
 {
@@ -6,6 +9,18 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            //string option = Console.ReadLine();
+            string option = "1";
+
+
+            switch (option)
+            {
+                case "1":
+                    Median();
+                    break;
+                default:
+                    break;
+            }
             //CallhackerCard();
             //CallSockMerchant();
             //countingValleys();
@@ -15,7 +30,11 @@ namespace HelloWorld
             //ArrayOdd();
             //FrogJump();
             //SouthWorkChallenge();
-            Solution(54321);
+            //Solution(54321);
+            //isBalanced();
+            //contacts();
+            //TrieContact();
+
         }
 
         private static void countingValleys()
@@ -127,6 +146,86 @@ namespace HelloWorld
                     Console.Write(N % 10);
                 }
                 N = N / 10;
+            }
+        }
+
+        private static void isBalanced()
+        {
+            BalancedBrackets balanced = new BalancedBrackets();
+            string s = balanced.isBalanced("{([)]}");
+            Console.WriteLine(s);
+        }
+
+        private static void contacts()
+        {
+            Contacts c = new Contacts();
+            //int queriesRows = Convert.ToInt32(Console.ReadLine().Trim());
+            int queriesRows = 4;
+
+
+            List<List<string>> queries = new List<List<string>>();
+            queries.Add("add hack".TrimEnd().Split(' ').ToList());
+            queries.Add("add hackerrank".TrimEnd().Split(' ').ToList());
+            queries.Add("find hac".TrimEnd().Split(' ').ToList());
+            queries.Add("find hak".TrimEnd().Split(' ').ToList());
+            //for (int i = 0; i < queriesRows; i++)
+            //{
+            //    queries.Add(Console.ReadLine().TrimEnd().Split(' ').ToList());
+            //}
+            List<int> result = c.contacts(queries);
+
+            Console.WriteLine(string.Join("\n", result));
+        }
+
+        private static void TrieContact()
+        {
+            List<List<string>> queries = new List<List<string>>();
+            ContactTrie trie = new ContactTrie();
+
+            queries.Add("add hack".TrimEnd().Split(' ').ToList());
+            queries.Add("add hackerrank".TrimEnd().Split(' ').ToList());
+            queries.Add("find hac".TrimEnd().Split(' ').ToList());
+            queries.Add("find hak".TrimEnd().Split(' ').ToList());
+
+            var root = new TrieNode(char.MinValue, 0);
+            List<int> response = new List<int>();
+
+            foreach (var operation in queries)
+            {
+                var operationType = operation[0];
+                var word = operation[1];
+                if (operationType == "add")
+                {
+                    trie.AddTrieNode(root, word);
+                }
+                else
+                {
+                    var count = trie.GetWordCountFromTrie(root, word);
+                    response.Add(count);
+                }
+            }
+            foreach (int item in response)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        private static void Median()
+        {
+            int aCount = Convert.ToInt32(Console.ReadLine().Trim());
+            FindTheRunningMedian f = new FindTheRunningMedian();
+            List<int> a = new List<int>();
+            List<decimal> response = new List<decimal>();
+            for (int i = 0; i < aCount; i++)
+            {
+                int aItem = Convert.ToInt32(Console.ReadLine().Trim());
+                a.Add(aItem);
+                response.Add(f.runningMedian(a));
+            }
+
+            foreach (var item in response)
+            {
+                Console.WriteLine(item.ToString("0.0"));
             }
         }
     }

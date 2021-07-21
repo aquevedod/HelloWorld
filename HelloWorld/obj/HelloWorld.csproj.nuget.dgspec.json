@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aquev\\Source\\Repos\\aquevedod\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {}
+    "C:\\Users\\ArnoldQuevedo\\source\\repos\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aquev\\Source\\Repos\\aquevedod\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {
+    "C:\\Users\\ArnoldQuevedo\\source\\repos\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aquev\\Source\\Repos\\aquevedod\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+        "projectUniqueName": "C:\\Users\\ArnoldQuevedo\\source\\repos\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
         "projectName": "HelloWorld",
-        "projectPath": "C:\\Users\\aquev\\Source\\Repos\\aquevedod\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
-        "packagesPath": "C:\\Users\\aquev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aquev\\Source\\Repos\\aquevedod\\HelloWorld\\HelloWorld\\obj\\",
+        "projectPath": "C:\\Users\\ArnoldQuevedo\\source\\repos\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+        "packagesPath": "C:\\Users\\ArnoldQuevedo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ArnoldQuevedo\\source\\repos\\HelloWorld\\HelloWorld\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\aquev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ArnoldQuevedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,10 +25,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.rockfarm.net/nuget": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -52,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.205\\RuntimeIdentifierGraph.json"
         }
       }
     }
