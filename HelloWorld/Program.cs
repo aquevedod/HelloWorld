@@ -16,7 +16,7 @@ namespace HelloWorld
             switch (option)
             {
                 case "1":
-                    Median();
+                    FreshPromo();
                     break;
                 default:
                     break;
@@ -34,6 +34,7 @@ namespace HelloWorld
             //isBalanced();
             //contacts();
             //TrieContact();
+            //Median();
 
         }
 
@@ -160,9 +161,6 @@ namespace HelloWorld
         {
             Contacts c = new Contacts();
             //int queriesRows = Convert.ToInt32(Console.ReadLine().Trim());
-            int queriesRows = 4;
-
-
             List<List<string>> queries = new List<List<string>>();
             queries.Add("add hack".TrimEnd().Split(' ').ToList());
             queries.Add("add hackerrank".TrimEnd().Split(' ').ToList());
@@ -227,6 +225,27 @@ namespace HelloWorld
             {
                 Console.WriteLine(item.ToString("0.0"));
             }
+        }
+
+        private static void CustomerReview()
+        {
+            List<string> repository = new List<string>() { "code", "codePhone", "coddle", "coddles", "codes" };
+            string customerQuery = "coddle";
+            Amazon.CustomerReview.searchSuggestions(repository, customerQuery);
+        }
+
+        private static void FreshPromo()
+        {
+            List<List<string>> _codeList = new List<List<string>>();
+            List<string> codeList = new List<string>() { "orange", "apple apple", "banana orange apple", "banana" };
+            List<string> shoppingCart = new List<string>() { "orange", "apple", "apple", "banana", "orange", "apple", "banana" };
+
+            foreach (string item in codeList)
+            {
+                _codeList.Add(item.Split(' ').ToList());
+            }
+            int response = Amazon.FreshPromo.foo(_codeList, shoppingCart);
+            Console.WriteLine(response);
         }
     }
 }
