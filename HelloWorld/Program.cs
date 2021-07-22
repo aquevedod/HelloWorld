@@ -16,7 +16,7 @@ namespace HelloWorld
             switch (option)
             {
                 case "1":
-                    FreshPromo();
+                    DecodindString();
                     break;
                 default:
                     break;
@@ -35,6 +35,7 @@ namespace HelloWorld
             //contacts();
             //TrieContact();
             //Median();
+            //FreshPromo();
 
         }
 
@@ -246,6 +247,13 @@ namespace HelloWorld
             }
             int response = Amazon.FreshPromo.foo(_codeList, shoppingCart);
             Console.WriteLine(response);
+        }
+
+        private static void DecodindString()
+        {
+            int numberOfRows = 3;
+            string encodedString = "mnes__ya_____mi";
+            string result = Amazon.Encoding.decodeString(numberOfRows, encodedString);
         }
     }
 }
